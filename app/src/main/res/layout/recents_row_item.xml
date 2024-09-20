@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:background="@drawable/card_bg">
+
+
+
+    <ImageView
+        android:id="@+id/imganh2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vinhhalong" />
+
+    <TextView
+        android:id="@+id/txtten1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="AM Lake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imganh2" />
+
+    <TextView
+        android:id="@+id/txtdiadiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="India"
+        app:layout_constraintStart_toStartOf="@+id/txtten1"
+        app:layout_constraintTop_toBottomOf="@+id/txtten1" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="Nổi bật"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtdiadiem"
+        app:layout_constraintTop_toBottomOf="@+id/txtdiadiem" />
+</androidx.constraintlayout.widget.ConstraintLayout>

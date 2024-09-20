@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d_16"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="@dimen/d_8">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imganh1"
+                android:layout_width="@dimen/d_106"
+                android:layout_height="@dimen/d_160"
+                android:contentDescription="@string/forbackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/vinhhalong" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/d_16">
+
+
+
+                <TextView
+                    android:id="@+id/txtten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/legacies"
+                    android:textColor="#000"
+                    android:textSize="@dimen/d_20s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtdiadiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:textColor="#000"
+                    android:text="20/4342"
+                    android:textSize="@dimen/d_16s" />
+
+                <TextView
+                    android:id="@+id/txtmota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_16"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/legacies"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btnkothich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="13dp"
+                    android:background="#fff"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_favorite_red_24dp" />
+            </LinearLayout>
+        </TableRow>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
